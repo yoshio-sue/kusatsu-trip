@@ -129,16 +129,9 @@
     border-radius: 8px;
     border-left: 4px solid #d4a574;
   }
-  .spot-image {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    margin: 8px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 12px;
     margin: 12px 0;
   }
@@ -150,7 +143,7 @@
   }
   .image-card img {
     width: 100%;
-    height: 150px;
+    height: 140px;
     object-fit: cover;
     display: block;
   }
@@ -161,8 +154,8 @@
     right: 0;
     background: rgba(0,0,0,0.7);
     color: white;
-    padding: 8px;
-    font-size: 0.9em;
+    padding: 6px;
+    font-size: 0.85em;
     text-align: center;
   }
   table {
@@ -215,13 +208,6 @@
   strong {
     color: #a67c52;
   }
-  .caution {
-    background: #fff9e6;
-    border-left: 5px solid #ffc107;
-    padding: 14px;
-    margin: 14px 0;
-    border-radius: 6px;
-  }
   .link-button {
     display: inline-block;
     padding: 6px 14px;
@@ -251,16 +237,6 @@
   }
   a:hover {
     text-decoration: underline;
-  }
-  .icon-text {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 8px 0;
-  }
-  .icon-text img {
-    width: 40px;
-    height: 40px;
   }
   @media (max-width: 768px) {
     header h1 {
@@ -341,6 +317,189 @@
   
   <div class="image-grid">
     <div class="image-card">
+      <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=400&h=300&fit=crop" alt="諏訪湖" onerror="this.style.display='none'">
+      <div class="caption">諏訪湖の絶景</div>
+    </div>
+    <div class="image-card">
+      <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=400&h=300&fit=crop" alt="神社" onerror="this.style.display='none'">
+      <div class="caption">諏訪大社 上社本宮</div>
+    </div>
+    <div class="image-card">
+      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=400&h=300&fit=crop" alt="温泉" onerror="this.style.display='none'">
+      <div class="caption">草津温泉 湯畑</div>
+    </div>
+  </div>
+  
+  <table>
+    <tr>
+      <th style="width:15%">時間目安</th>
+      <th style="width:25%">場所/活動</th>
+      <th style="width:60%">詳細</th>
+    </tr>
+    <tr>
+      <td class="time">06:30</td>
+      <td><strong>🚗 碧南市 出発</strong></td>
+      <td>
+        <strong>ルート:</strong>国道23号 → 国道19号 → 中央道 名古屋IC → 岡谷IC<br>
+        <strong>所要時間:</strong>約3時間<br>
+        <span class="note">早朝出発で余裕を持った行程・コンビニで朝食調達</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">10:00頃</td>
+      <td><span class="highlight">📸 諏訪湖</span></td>
+      <td>
+        <strong>写真スポット:</strong>湖畔の絶景、晴れていれば富士山も見える<br>
+        <span class="note">岡谷ICから5分・立石公園展望台からの眺めがおすすめ</span><br>
+        <a href="https://www.suwakanko.jp/" target="_blank" rel="noopener" class="link-button">諏訪観光情報</a>
+    <a href="https://www.town.karuizawa.lg.jp/" target="_blank" rel="noopener" class="link-button">軽井沢観光協会</a>
+    <a href="https://www.jartic.or.jp/" target="_blank" rel="noopener" class="link-button">道路交通情報</a>
+  </div>
+</section>
+
+</div>
+
+</body>
+</html> rel="noopener" class="link-button">🔗 諏訪観光情報</a>
+        <a href="https://www.google.com/maps/search/諏訪湖+立石公園/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">10:20頃</td>
+      <td><span class="highlight">⛩️ 諏訪大社 上社本宮</span></td>
+      <td>
+        <strong>ご利益:</strong>縁結び、商売繁盛、家内安全、心願成就、厄除け、方位除け、勝負運、必勝祈願<br>
+        <span class="note">全国約25,000社の諏訪神社総本社・日本最古級の神社</span><br>
+        <a href="http://suwataisha.or.jp/" target="_blank" rel="noopener" class="link-button">🔗 公式サイト</a>
+        <a href="https://www.google.com/maps/search/諏訪大社上社本宮/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">11:10頃</td>
+      <td><span class="highlight">🙏 万治の石仏</span></td>
+      <td>
+        <strong>参拝方法:</strong>① 正面で一礼し「よろずおさまりますように」 ② 時計回りに3周しながら同じ言葉を唱える ③ 正面に戻り願い事を心の中で唱える<br>
+        <span class="note">ユニークな形の石仏・願いが叶うパワースポット</span><br>
+        <a href="https://www.google.com/maps/search/万治の石仏/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">11:40頃</td>
+      <td><strong>🍜 昼食</strong></td>
+      <td>
+        <strong>おすすめ:</strong>信州そば、諏訪味噌料理、とんかつ丸一(下諏訪の人気店)<br>
+        <span class="note">下諏訪周辺で昼食・地元の味を堪能</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">13:00頃</td>
+      <td><strong>🚗 移動</strong></td>
+      <td>
+        <strong>ルート:</strong>中央道 岡谷IC → 長野道 → 上信越道 碓氷軽井沢IC → 国道146号<br>
+        <strong>所要時間:</strong>約2時間20分(SA休憩含む)<br>
+        <span class="note">⚠️ 峠道は雪・凍結注意!スタッドレス必須</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">15:30頃</td>
+      <td><strong>🏨 ホテル チェックイン</strong></td>
+      <td>
+        草津温泉街・2部屋確保<br>
+        <span class="note">※到着時刻を宿に連絡</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">チェックイン後</td>
+      <td><strong>♨️ 温泉・入浴</strong></td>
+      <td>
+        <strong>草津温泉の特徴:</strong>日本三名泉の一つ、強酸性で殺菌力が高い(美肌効果)、源泉温度が高い<br>
+        <span class="note">露天風呂・大浴場でゆっくりリラックス・長湯注意!(10〜15分程度)</span><br>
+        <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">🔗 草津温泉観光協会</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">18:00頃</td>
+      <td><strong>🍺 夕食・飲み放題</strong></td>
+      <td>
+        3人で乾杯!ラグジュアリー飲酒タイム<br>
+        <span class="note">※翌日の運転はよしおメイン確定・ほどほどに楽しむ😊</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">20:00以降</td>
+      <td><strong>🌙 夜の散策</strong></td>
+      <td>
+        <strong>湯畑ライトアップ鑑賞(点灯時間:日没〜24:00)</strong><br>
+        幻想的な湯けむりと光の演出、📸 写真撮影におすすめ、温泉まんじゅう食べ歩き<br>
+        <span class="note">防寒対策必須・夜の温泉街は寒い!</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="time">〜24:00</td>
+      <td><strong>🏨 宿で2次会 or 就寝</strong></td>
+      <td>
+        <span class="note">翌日の運転に備えて適度に楽しむ・水分補給を忘れずに</span>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- 草津温泉の楽しみ方 -->
+<section>
+  <h2>♨️ 草津温泉 おすすめスポット</h2>
+  
+  <div class="image-grid">
+    <div class="image-card">
+      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=400&h=300&fit=crop" alt="湯畑" onerror="this.style.display='none'">
+      <div class="caption">湯畑(シンボル)</div>
+    </div>
+    <div class="image-card">
+      <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=400&h=300&fit=crop" alt="温泉まんじゅう" onerror="this.style.display='none'">
+      <div class="caption">温泉まんじゅう</div>
+    </div>
+    <div class="image-card">
+      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop" alt="公園" onerror="this.style.display='none'">
+      <div class="caption">西の河原公園</div>
+    </div>
+  </div>
+  
+  <div class="spot-info">
+    <strong class="emoji">🎭</strong><strong>湯もみショー</strong><br>
+    <strong>場所:</strong>熱乃湯(湯畑すぐそば) | <strong>時間:</strong>9:30〜、10:00〜、10:30〜、15:30〜、16:00〜、16:30〜(各回20分) | <strong>料金:</strong>大人700円<br>
+    <span class="note">草津節に合わせて大きな板で湯をもむ伝統芸能・見応えあり</span>
+  </div>
+  
+  <div class="spot-info">
+    <strong class="emoji">💧</strong><strong>湯畑</strong><br>
+    草津温泉のシンボル・毎分4,000リットルの温泉が湧出<br>
+    <span class="note">📸 昼と夜で全く違う表情・両方撮影推奨</span>
+  </div>
+  
+  <div class="spot-info">
+    <strong class="emoji">🌲</strong><strong>西の河原公園</strong><br>
+    <strong>特徴:</strong>至る所から温泉が湧き出す不思議な公園<br>
+    <strong>見どころ:</strong>冬の雪景色、湯けむり、西の河原露天風呂<br>
+    <span class="note">※2日目の朝に散策予定・歩きやすい靴推奨</span><br>
+    <a href="https://www.google.com/maps/search/西の河原公園+草津/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
+  </div>
+  
+  <div class="info-box">
+    <strong>🍡 草津グルメ</strong><br>
+    ・温泉まんじゅう(頼朝、松むら饅頭など)<br>
+    ・花豆ソフトクリーム<br>
+    ・草津ビール(地ビール)<br>
+    ・温泉卵<br>
+    <span class="note">夜の散策時に食べ歩き推奨!</span>
+  </div>
+</section>
+
+<!-- Day2 -->
+<section>
+  <h2>📅 Day2:草津温泉 → 八ッ場ダム → ハルニレテラス → 碧南市</h2>
+  <p class="note" style="margin-top:8px;">※八ッ場ダムカレー・白糸の滝・ハルニレテラス・姨捨SAの夜景</p>
+  
+  <div class="image-grid">
+    <div class="image-card">
       <img src="https://images.unsplash.com/photo-1587474604979-ac6f932c5498?w=400&h=300&fit=crop" alt="ダム" onerror="this.style.display='none'">
       <div class="caption">八ッ場ダム</div>
     </div>
@@ -363,71 +522,45 @@
     <tr>
       <td class="time">08:00</td>
       <td><strong>🍚 朝食</strong></td>
-      <td>
-        宿で朝食<br>
-        <span class="note">しっかり食べて帰路に備える</span>
-      </td>
+      <td>宿で朝食<br><span class="note">しっかり食べて帰路に備える</span></td>
     </tr>
     <tr>
       <td class="time">朝食後</td>
       <td><strong>♨️ 朝風呂</strong></td>
-      <td>
-        朝の温泉でもう一度リラックス<br>
-        <span class="note">チェックアウト前にもう一度入浴・朝風呂は空いている</span>
-      </td>
+      <td>朝の温泉でもう一度リラックス<br><span class="note">チェックアウト前にもう一度入浴・朝風呂は空いている</span></td>
     </tr>
     <tr>
       <td class="time">09:30</td>
       <td><strong>🏨 チェックアウト</strong></td>
-      <td>
-        <span class="note">※通常9:00だが、飲酒後のよしおに配慮して9:30設定</span>
-      </td>
+      <td><span class="note">※通常9:00だが、飲酒後のよしおに配慮して9:30設定</span></td>
     </tr>
     <tr>
       <td class="time">10:00頃</td>
       <td><span class="highlight">🚗 道の駅 草津運動茶屋公園</span></td>
       <td>
-        <strong>🛍️ お土産購入:</strong><br>
-        ・草津温泉まんじゅう<br>
-        ・花豆・湯の花<br>
-        ・地元野菜<br>
-        <strong>ルート:</strong>国道292号沿い<br>
-        <span class="note">休憩・トイレ休憩も</span><br>
-        <a href="https://www.kusatsu-kokusai.com/" target="_blank" rel="noopener" class="link-button">🔗 道の駅情報</a>
+        <strong>🛍️ お土産購入:</strong>草津温泉まんじゅう、花豆・湯の花、地元野菜<br>
+        <span class="note">休憩・トイレ休憩も</span>
       </td>
     </tr>
     <tr>
       <td class="time">10:30頃</td>
       <td><span class="highlight">🌲 西の河原公園 散策</span></td>
       <td>
-        <strong>見どころ:</strong><br>
-        ・冬の雪景色と湯けむり<br>
-        ・至る所から湧き出る温泉<br>
-        ・📸 最後の写真スポット<br>
+        <strong>見どころ:</strong>冬の雪景色と湯けむり、至る所から湧き出る温泉、📸 最後の写真スポット<br>
         <span class="note">⚠️ 歩きやすい靴必須・防寒対策</span>
       </td>
     </tr>
     <tr>
       <td class="time">11:00頃</td>
       <td><strong>🚗 移動</strong></td>
-      <td>
-        <strong>ルート:</strong>県道・国道292号・国道145号 → 八ッ場ダム<br>
-        <strong>所要時間:</strong>約30分
-      </td>
+      <td><strong>ルート:</strong>県道・国道292号・国道145号 → 八ッ場ダム<br><strong>所要時間:</strong>約30分</td>
     </tr>
     <tr>
       <td class="time">11:30頃</td>
       <td><span class="highlight">🗻 八ッ場ダム</span></td>
       <td>
-        <strong>見どころ:</strong><br>
-        ・2020年3月完成の新しいダム・高さ116m<br>
-        ・ダム堤体上から絶景を見渡せる<br>
-        ・やんば見放台(展望台)<br>
-        <strong>🍛 八ッ場ダムカレー:</strong><br>
-        ・道の駅八ッ場ふるさと館「八ッ場食堂」<br>
-        ・<strong>営業時間:9:30〜15:30</strong><br>
-        ・陶器のダムでカレーを堰き止めた新形式<br>
-        ・ダムカレーカード付き<br>
+        <strong>見どころ:</strong>2020年3月完成の新しいダム・高さ116m、ダム堤体上から絶景を見渡せる<br>
+        <strong>🍛 八ッ場ダムカレー:</strong>道の駅八ッ場ふるさと館「八ッ場食堂」(営業時間:9:30〜15:30)、陶器のダムでカレーを堰き止めた新形式、ダムカレーカード付き<br>
         <span class="note">※冬期(12月〜3月)は土日祝のみ営業の可能性あり・事前確認推奨</span><br>
         <a href="https://www.yanbadamsidemuseum.jp/" target="_blank" rel="noopener" class="link-button">🔗 八ッ場ダム情報</a>
         <a href="https://www.google.com/maps/search/八ッ場ダム/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
@@ -436,20 +569,13 @@
     <tr>
       <td class="time">12:30頃</td>
       <td><strong>🚗 移動</strong></td>
-      <td>
-        <strong>ルート:</strong>八ッ場ダム → 国道145号 → 国道18号 → 上信越道 碓氷軽井沢IC<br>
-        <strong>所要時間:</strong>約40分
-      </td>
+      <td><strong>ルート:</strong>八ッ場ダム → 国道145号 → 国道18号 → 上信越道 碓氷軽井沢IC<br><strong>所要時間:</strong>約40分</td>
     </tr>
     <tr>
       <td class="time">13:10頃</td>
       <td><span class="highlight">🌊 白糸の滝</span></td>
       <td>
-        <strong>絶景スポット:</strong><br>
-        ・高さ3m、幅70mの滝が白糸のように流れ落ちる<br>
-        ・駐車場から徒歩5分<br>
-        ・📸 冬の氷結した滝も見応えあり<br>
-        <strong>ルート:</strong>碓氷軽井沢IC → 白糸ハイランドウェイ(有料道路)<br>
+        <strong>絶景スポット:</strong>高さ3m、幅70mの滝が白糸のように流れ落ちる、駐車場から徒歩5分、📸 冬の氷結した滝も見応えあり<br>
         <span class="note">自然豊かな森林の景観・軽井沢方面への途中</span><br>
         <a href="https://www.town.karuizawa.lg.jp/www/contents/1001000000699/index.html" target="_blank" rel="noopener" class="link-button">🔗 白糸の滝情報</a>
         <a href="https://www.google.com/maps/search/白糸の滝+軽井沢/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
@@ -459,12 +585,7 @@
       <td class="time">14:00頃</td>
       <td><span class="highlight">🌳 ハルニレテラス</span></td>
       <td>
-        <strong>おしゃれな森のリゾート:</strong><br>
-        ・春楡の木立に囲まれたウッドデッキの小さな街<br>
-        ・湯川のせせらぎが心地よい<br>
-        ・セレクトショップ・カフェ・ベーカリー<br>
-        ・落ち着いた大人の雰囲気<br>
-        ・📸 自然とおしゃれな建築が映える<br>
+        <strong>おしゃれな森のリゾート:</strong>春楡の木立に囲まれたウッドデッキの小さな街、湯川のせせらぎが心地よい、セレクトショップ・カフェ・ベーカリー<br>
         <strong>おすすめ:</strong>カフェで軽食・コーヒー休憩<br>
         <span class="note">中軽井沢・白糸の滝から約20分・混雑少なめでゆったり過ごせる</span><br>
         <a href="https://www.hoshino-area.jp/shop" target="_blank" rel="noopener" class="link-button">🔗 公式サイト</a>
@@ -484,11 +605,8 @@
       <td class="time">17:00頃</td>
       <td><span class="highlight">🌆 姨捨SA</span></td>
       <td>
-        <strong>夕方〜夜景の絶景スポット:</strong><br>
-        ・日本夜景100選・日本夜景遺産認定<br>
-        ・善光寺平の大パノラマ<br>
-        ・📸 <strong>おすすめ時間:夕暮れ〜夜</strong>(2月下旬は17:30頃日没)<br>
-        ・軽食・おやつ・お土産<br>
+        <strong>夕方〜夜景の絶景スポット:</strong>日本夜景100選・日本夜景遺産認定、善光寺平の大パノラマ<br>
+        📸 <strong>おすすめ時間:夕暮れ〜夜</strong>(2月下旬は17:30頃日没)<br>
         <span class="note">この時間帯なら夕暮れ〜夜景が楽しめる!展望広場で休憩</span><br>
         <a href="https://sapa.c-nexco.co.jp/sapa?sapainfoid=181" target="_blank" rel="noopener" class="link-button">🔗 姨捨SA情報</a>
       </td>
@@ -496,11 +614,7 @@
     <tr>
       <td class="time">17:30頃</td>
       <td><strong>🚗 帰路再開</strong></td>
-      <td>
-        <strong>ルート:</strong>中央道 → 名古屋方面<br>
-        <strong>所要時間:</strong>約2.5時間<br>
-        <span class="note">ラストスパート・安全運転第一</span>
-      </td>
+      <td><strong>ルート:</strong>中央道 → 名古屋方面<br><strong>所要時間:</strong>約2.5時間<br><span class="note">ラストスパート・安全運転第一</span></td>
     </tr>
     <tr>
       <td class="time">20:00</td>
@@ -800,7 +914,7 @@
     ・西の河原公園:無料駐車場あり<br>
     ・八ッ場ダム:道の駅八ッ場ふるさと館 無料駐車場<br>
     ・白糸の滝:駐車場あり(白糸ハイランドウェイは有料道路)<br>
-    ・ハルニレテラス:無料駐車場あり<br>
+    ・ハルニレテラス:無料駐車場あり
   </div>
   
   <div class="info-box">
@@ -830,7 +944,7 @@
     </ul>
     
     <div style="margin-top:20px; text-align:center;">
-      <p>🌸♨️🗻</p>
+      <p style="font-size:2em;">🌸♨️🗻</p>
     </div>
     
     <p style="margin-top:16px; font-size:1.1em; color:#a67c52; text-align:center;">
@@ -844,210 +958,4 @@
     <br>
     <strong>参考リンク集:</strong><br>
     <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">草津温泉観光協会</a>
-    <a href="https://www.suwakanko.jp/" target="_blank" rel="noopener" class="link-button">諏訪観光情報</a>
-    <a href="https://www.karuizawa-shw.com/" target="_blank" rel="noopener" class="link-button">軽井沢観光協会</a>
-    <a href="https://www.jartic.or.jp/" target="_blank" rel="noopener" class="link-button">道路交通情報</a>
-  </div>
-</section>
-
-</div>
-
-</body>
-</html>ash.com/photo-1490806843957-31f4c9a91c65?w=600" alt="諏訪湖">
-      <div class="caption">諏訪湖の絶景</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=600" alt="神社">
-      <div class="caption">諏訪大社 上社本宮</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600" alt="温泉">
-      <div class="caption">草津温泉 湯畑</div>
-    </div>
-  </div>
-  
-  <table>
-    <tr>
-      <th style="width:15%">時間目安</th>
-      <th style="width:25%">場所/活動</th>
-      <th style="width:60%">詳細</th>
-    </tr>
-    <tr>
-      <td class="time">06:30</td>
-      <td><strong>🚗 碧南市 出発</strong></td>
-      <td>
-        <strong>ルート:</strong>国道23号 → 国道19号 → 中央道 名古屋IC → 岡谷IC<br>
-        <strong>所要時間:</strong>約3時間<br>
-        <span class="note">早朝出発で余裕を持った行程・コンビニで朝食調達</span><br>
-        <a href="https://maps.app.goo.gl/" target="_blank" rel="noopener" class="link-button map">📍 ルート確認</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">10:00頃</td>
-      <td><span class="highlight">📸 諏訪湖</span></td>
-      <td>
-        <strong>写真スポット:</strong>湖畔の絶景、晴れていれば富士山も見える<br>
-        <span class="note">岡谷ICから5分・立石公園展望台からの眺めがおすすめ</span><br>
-        <a href="https://www.suwakanko.jp/" target="_blank" rel="noopener" class="link-button">🔗 諏訪観光情報</a>
-        <a href="https://www.google.com/maps/search/諏訪湖+立石公園/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">10:20頃</td>
-      <td><span class="highlight">⛩️ 諏訪大社 上社本宮</span></td>
-      <td>
-        <strong>ご利益:</strong><br>
-        ・縁結び、商売繁盛<br>
-        ・家内安全、心願成就<br>
-        ・厄除け、方位除け<br>
-        ・勝負運、必勝祈願<br>
-        <span class="note">全国約25,000社の諏訪神社総本社・日本最古級の神社・しっかり参拝推奨</span><br>
-        <a href="http://suwataisha.or.jp/" target="_blank" rel="noopener" class="link-button">🔗 公式サイト</a>
-        <a href="https://www.google.com/maps/search/諏訪大社上社本宮/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">11:10頃</td>
-      <td><span class="highlight">🙏 万治の石仏</span></td>
-      <td>
-        <strong>参拝方法:</strong><br>
-        ① 正面で一礼し「よろずおさまりますように」<br>
-        ② 時計回りに3周しながら同じ言葉を唱える<br>
-        ③ 正面に戻り願い事を心の中で唱える<br>
-        <span class="note">ユニークな形の石仏・願いが叶うパワースポット・下諏訪</span><br>
-        <a href="https://www.town.shimosuwa.lg.jp/kanko/" target="_blank" rel="noopener" class="link-button">🔗 観光情報</a>
-        <a href="https://www.google.com/maps/search/万治の石仏/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">11:40頃</td>
-      <td><strong>🍜 昼食</strong></td>
-      <td>
-        <strong>おすすめグルメ:</strong><br>
-        ・信州そば(地元の手打ちそば屋)<br>
-        ・諏訪味噌を使った料理<br>
-        ・とんかつ丸一(下諏訪の人気店)<br>
-        <span class="note">下諏訪周辺で昼食・地元の味を堪能</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">13:00頃</td>
-      <td><strong>🚗 移動</strong></td>
-      <td>
-        <strong>ルート:</strong>中央道 岡谷IC → 長野道 → 上信越道 碓氷軽井沢IC → 国道146号・県道<br>
-        <strong>所要時間:</strong>約2時間20分(SA休憩含む)<br>
-        <span class="note">⚠️ 峠道は雪・凍結注意!スタッドレス必須</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">15:30頃</td>
-      <td><strong>🏨 ホテル チェックイン</strong></td>
-      <td>
-        草津温泉街・2部屋確保<br>
-        <span class="note">※チェックイン時間は宿により異なる(15:00〜15:30目安)・到着時刻を宿に連絡</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">チェックイン後</td>
-      <td><strong>♨️ 温泉・入浴</strong></td>
-      <td>
-        <strong>草津温泉の特徴:</strong><br>
-        ・日本三名泉の一つ<br>
-        ・強酸性で殺菌力が高い(美肌効果)<br>
-        ・源泉温度が高い(湯畑は約55℃)<br>
-        <span class="note">露天風呂・大浴場でゆっくりリラックス・長湯注意!(10〜15分程度)</span><br>
-        <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">🔗 草津温泉観光協会</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">18:00頃</td>
-      <td><strong>🍺 夕食・飲み放題</strong></td>
-      <td>
-        3人で乾杯!ラグジュアリー飲酒タイム<br>
-        <span class="note">※翌日の運転はよしおメイン確定・ほどほどに楽しむ😊</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">20:00以降</td>
-      <td><strong>🌙 夜の散策</strong></td>
-      <td>
-        <strong>湯畑ライトアップ鑑賞</strong><br>
-        ・<strong>点灯時間:日没〜24:00</strong><br>
-        ・幻想的な湯けむりと光の演出<br>
-        ・📸 写真撮影におすすめ<br>
-        ・温泉まんじゅう食べ歩き<br>
-        <span class="note">防寒対策必須・夜の温泉街は寒い!</span><br>
-        <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">🔗 ライトアップ情報</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">〜24:00</td>
-      <td><strong>🏨 宿で2次会 or 就寝</strong></td>
-      <td>
-        <span class="note">翌日の運転に備えて適度に楽しむ・水分補給を忘れずに</span>
-      </td>
-    </tr>
-  </table>
-</section>
-
-<!-- 草津温泉の楽しみ方 -->
-<section>
-  <h2>♨️ 草津温泉 おすすめスポット</h2>
-  
-  <div class="image-grid">
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=400&h=300&fit=crop" alt="湯畑" onerror="this.style.display='none'">
-      <div class="caption">湯畑(シンボル)</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=400&h=300&fit=crop" alt="温泉まんじゅう" onerror="this.style.display='none'">
-      <div class="caption">温泉まんじゅう</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop" alt="公園" onerror="this.style.display='none'">
-      <div class="caption">西の河原公園</div>
-    </div>
-  </div>
-  
-  <div class="spot-info">
-    <strong class="emoji">🎭</strong><strong>湯もみショー</strong><br>
-    <strong>場所:</strong>熱乃湯(湯畑すぐそば)<br>
-    <strong>時間:</strong>9:30〜、10:00〜、10:30〜、15:30〜、16:00〜、16:30〜(各回20分)<br>
-    <strong>料金:</strong>大人700円<br>
-    <span class="note">草津節に合わせて大きな板で湯をもむ伝統芸能・見応えあり</span><br>
-    <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">🔗 詳細情報</a>
-  </div>
-  
-  <div class="spot-info">
-    <strong class="emoji">💧</strong><strong>湯畑</strong><br>
-    草津温泉のシンボル・毎分4,000リットルの温泉が湧出<br>
-    <span class="note">📸 昼と夜で全く違う表情・両方撮影推奨</span>
-  </div>
-  
-  <div class="spot-info">
-    <strong class="emoji">🌲</strong><strong>西の河原公園(にしのかわらこうえん)</strong><br>
-    <strong>特徴:</strong>至る所から温泉が湧き出す不思議な公園<br>
-    <strong>見どころ:</strong>冬の雪景色、湯けむり、西の河原露天風呂<br>
-    <span class="note">※2日目の朝に散策予定・歩きやすい靴推奨</span><br>
-    <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">🔗 詳細情報</a>
-    <a href="https://www.google.com/maps/search/西の河原公園+草津/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-  </div>
-  
-  <div class="info-box">
-    <strong>🍡 草津グルメ</strong><br>
-    ・温泉まんじゅう(頼朝、松むら饅頭など)<br>
-    ・花豆ソフトクリーム<br>
-    ・草津ビール(地ビール)<br>
-    ・温泉卵<br>
-    <span class="note">夜の散策時に食べ歩き推奨!</span>
-  </div>
-</section>
-
-<!-- Day2 -->
-<section>
-  <h2>📅 Day2:草津温泉 → 八ッ場ダム → ハルニレテラス → 碧南市</h2>
-  <p class="note" style="margin-top:8px;">※八ッ場ダムカレー・白糸の滝・ハルニレテラス・姨捨SAの夜景</p>
-  
-  <div class="image-grid">
-    <div class="image-card">
-      <img src="https://images.unspl
+    <a href="https://www.suwakanko.jp/" target="_blank"
