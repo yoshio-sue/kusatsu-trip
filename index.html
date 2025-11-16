@@ -3,250 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>草津温泉 1泊2日 旅のしおり(案)</title>
-<style>
-  body {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #f5e6d3 0%, #e8d4b8 100%);
-    color: #4a4a4a;
-    line-height: 1.7;
-  }
-  header {
-    background: linear-gradient(135deg, #d4a574 0%, #c89b65 100%);
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  header::before {
-    content: '🌸';
-    position: absolute;
-    font-size: 80px;
-    opacity: 0.2;
-    left: 20px;
-    top: 20px;
-  }
-  header::after {
-    content: '♨️';
-    position: absolute;
-    font-size: 80px;
-    opacity: 0.2;
-    right: 20px;
-    top: 20px;
-  }
-  header h1 {
-    margin: 0 0 12px 0;
-    font-size: 2.2em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    position: relative;
-    z-index: 1;
-  }
-  header p {
-    margin: 6px 0;
-    font-size: 1em;
-    opacity: 0.95;
-  }
-  .member-info {
-    background: rgba(255,255,255,0.25);
-    padding: 12px 16px;
-    border-radius: 12px;
-    margin-top: 16px;
-    font-size: 0.95em;
-    display: inline-block;
-  }
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  h2 {
-    background: linear-gradient(to right, #d4a574 0%, #e8d4b8 100%);
-    margin: 0;
-    padding: 16px 20px;
-    font-size: 1.4em;
-    border-left: 6px solid #a67c52;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    color: #5a4a3a;
-  }
-  h3 {
-    color: #a67c52;
-    margin: 20px 20px 10px 20px;
-    font-size: 1.2em;
-    border-bottom: 2px solid #d4a574;
-    padding-bottom: 8px;
-  }
-  section {
-    padding: 20px;
-    border-bottom: 1px solid #d4a574;
-    background: #fff;
-    margin-bottom: 3px;
-  }
-  .info-box {
-    background: #fef9f3;
-    border-left: 5px solid #d4a574;
-    padding: 14px;
-    margin: 14px 0;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  }
-  .highlight-box {
-    background: linear-gradient(to right, #fef9f3 0%, #fdf5eb 100%);
-    padding: 16px;
-    margin: 14px 0;
-    border-radius: 10px;
-    border: 2px solid #d4a574;
-  }
-  .hotel-card {
-    background: #fff;
-    border: 2px solid #d4a574;
-    border-radius: 12px;
-    padding: 16px;
-    margin: 14px 0;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-  }
-  .hotel-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  }
-  .hotel-card h4 {
-    margin: 0 0 10px 0;
-    color: #a67c52;
-    font-size: 1.2em;
-  }
-  .hotel-card .price {
-    color: #d4774a;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin: 8px 0;
-  }
-  .spot-info {
-    background: #f8f9fa;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border-left: 4px solid #d4a574;
-  }
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 12px;
-    margin: 12px 0;
-  }
-  .image-card {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  .image-card img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    display: block;
-  }
-  .image-card .caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,0.7);
-    color: white;
-    padding: 6px;
-    font-size: 0.85em;
-    text-align: center;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  th, td {
-    padding: 12px 10px;
-    text-align: left;
-    vertical-align: top;
-    border-bottom: 1px solid #e8d4b8;
-  }
-  th {
-    background: #fef9f3;
-    font-weight: bold;
-    font-size: 0.95em;
-    color: #5a4a3a;
-  }
-  td {
-    font-size: 0.93em;
-  }
-  .time {
-    color: #d4774a;
-    font-weight: bold;
-    white-space: nowrap;
-  }
-  .highlight {
-    color: #a67c52;
-    font-weight: bold;
-  }
-  .note {
-    font-size: 0.88em;
-    color: #666;
-    margin-top: 6px;
-    line-height: 1.5;
-  }
-  ul, ol {
-    margin: 10px 0;
-    padding-left: 26px;
-  }
-  li {
-    margin: 8px 0;
-    font-size: 0.93em;
-  }
-  .emoji {
-    font-size: 1.3em;
-    margin-right: 6px;
-  }
-  strong {
-    color: #a67c52;
-  }
-  .link-button {
-    display: inline-block;
-    padding: 6px 14px;
-    margin: 6px 6px 6px 0;
-    background: #7ba8c7;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 0.85em;
-    transition: all 0.3s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  .link-button:hover {
-    background: #6a94b3;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-  }
-  .link-button.map {
-    background: #81b29a;
-  }
-  .link-button.map:hover {
-    background: #6fa085;
-  }
-  a {
-    color: #7ba8c7;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 1.6em;
-    }
-    .image-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
+<meta name="robots" content="noindex, nofollow">
+<title>草津温泉 1泊2日 旅のしおり</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -261,701 +20,130 @@
 
 <div class="container">
 
-<!-- ホテル候補 -->
-<section>
-  <h2>🏨 ホテル候補(要予約)</h2>
+<section class="intro-section">
+  <h2>📖 このしおりについて</h2>
+  <p>この旅のコンセプトは<strong>「無理せず、楽しく、思い出に残る温泉旅」</strong>です。</p>
+  <p>各ページから詳細な情報をご確認ください。天候・道路状況によって柔軟に予定変更OKです!</p>
+</section>
+
+<section class="navigation-section">
+  <h2>🗂️ メニュー</h2>
   
-  <div class="hotel-card">
-    <h4>① ホテル櫻井</h4>
-    <p><strong>特徴:</strong>草津最大級の大浴場、湯畑まで徒歩5分の好立地</p>
-    <p><strong>プラン:</strong>バイキング+飲み放題オプション</p>
-    <p class="price">予算目安:1人 18,000円〜25,000円/泊</p>
-    <p class="note">※コスパ重視・団体向け・館内施設充実</p>
-    <p class="note">
-      <a href="https://www.hotel-sakurai.co.jp/" target="_blank" rel="noopener" class="link-button">🔗 公式サイト</a>
-      <a href="https://www.google.com/maps/search/ホテル櫻井+草津/" target="_blank" rel="noopener" class="link-button map">📍 Google Map</a>
-    </p>
-  </div>
-  
-  <div class="hotel-card">
-    <h4>② ラビスタ草津ヒルズ</h4>
-    <p><strong>特徴:</strong>全室温泉露天風呂付き、最上階展望浴場</p>
-    <p><strong>プラン:</strong>インクルーシブラウンジ(湯上りビール・軽食)</p>
-    <p class="price">予算目安:1人 30,000円〜45,000円/泊</p>
-    <p class="note">※高級志向・プライベート重視・静かな環境</p>
-    <p class="note">
-      <a href="https://www.hotespa.net/hotels/kusatsu/" target="_blank" rel="noopener" class="link-button">🔗 公式サイト</a>
-      <a href="https://www.google.com/maps/search/ラビスタ草津ヒルズ/" target="_blank" rel="noopener" class="link-button map">📍 Google Map</a>
-    </p>
-  </div>
-  
-  <div class="hotel-card">
-    <h4>③ ホテル フォーレスト草津</h4>
-    <p><strong>特徴:</strong>2025年3月よりオールインクルーシブ導入</p>
-    <p><strong>プラン:</strong>夕食時ドリンク飲み放題、よもぎ蒸し等スパ体験込み</p>
-    <p class="price">予算目安:1人 25,000円〜35,000円/泊</p>
-    <p class="note">※ハイクラスリゾート・アクティビティ充実・新しい施設</p>
-    <p class="note">
-      <a href="https://www.kusatsu-forest.com/" target="_blank" rel="noopener" class="link-button">🔗 公式サイト</a>
-      <a href="https://www.google.com/maps/search/ホテルフォーレスト草津/" target="_blank" rel="noopener" class="link-button map">📍 Google Map</a>
-    </p>
-  </div>
-  
-  <div class="info-box">
-    <strong>💡 予約のポイント</strong><br>
-    ・2部屋(男女別)の確保<br>
-    ・飲み放題プランの有無を確認<br>
-    ・チェックイン時間(15:00〜15:30希望)を相談<br>
-    ・冬季の送迎バス有無を確認
+  <div class="nav-grid">
+    <a href="hotels/" class="nav-card">
+      <div class="nav-icon">🏨</div>
+      <h3>ホテル候補</h3>
+      <p>3つのホテルから選択<br>予算・設備・プラン比較</p>
+    </a>
+    
+    <a href="day1/" class="nav-card">
+      <div class="nav-icon">📅</div>
+      <h3>Day1 スケジュール</h3>
+      <p>碧南→諏訪湖→草津温泉<br>観光スポット・時間詳細</p>
+    </a>
+    
+    <a href="day2/" class="nav-card">
+      <div class="nav-icon">📅</div>
+      <h3>Day2 スケジュール</h3>
+      <p>草津→八ッ場ダム→白糸の滝<br>帰路・立ち寄りスポット</p>
+    </a>
+    
+    <a href="spots/" class="nav-card">
+      <div class="nav-icon">♨️</div>
+      <h3>草津おすすめスポット</h3>
+      <p>湯畑・湯もみショー<br>西の河原公園・グルメ</p>
+    </a>
+    
+    <a href="budget/" class="nav-card">
+      <div class="nav-icon">💰</div>
+      <h3>予算まとめ</h3>
+      <p>1人あたり費用概算<br>ホテル別総予算</p>
+    </a>
+    
+    <a href="gourmet/" class="nav-card">
+      <div class="nav-icon">🍜</div>
+      <h3>グルメ情報</h3>
+      <p>おすすめレストラン<br>温泉まんじゅう・食べ歩き</p>
+    </a>
+    
+    <a href="preparation/" class="nav-card">
+      <div class="nav-icon">✅</div>
+      <h3>準備チェックリスト</h3>
+      <p>予約・持ち物・車関連<br>出発前確認事項</p>
+    </a>
+    
+    <a href="notes/" class="nav-card">
+      <div class="nav-icon">⚠️</div>
+      <h3>注意事項・持ち物</h3>
+      <p>冬道運転・防寒対策<br>温泉マナー・緊急連絡先</p>
+    </a>
+    
+    <a href="photos/" class="nav-card">
+      <div class="nav-icon">📸</div>
+      <h3>写真スポット</h3>
+      <p>絶景撮影ポイント8選<br>諏訪湖・湯畑・姨捨SA</p>
+    </a>
   </div>
 </section>
 
-<!-- Day1 -->
-<section>
-  <h2>📅 Day1:碧南市 → 諏訪湖 → 草津温泉(早朝出発)</h2>
-  <p class="note" style="margin-top:8px;">※移動と観光のバランス重視・2時間ごとに休憩</p>
+<section class="quick-info">
+  <h2>⚡ クイック情報</h2>
   
-  <div class="image-grid">
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=400&h=300&fit=crop" alt="諏訪湖" onerror="this.style.display='none'">
-      <div class="caption">諏訪湖の絶景</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=400&h=300&fit=crop" alt="神社" onerror="this.style.display='none'">
-      <div class="caption">諏訪大社 上社本宮</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=400&h=300&fit=crop" alt="温泉" onerror="this.style.display='none'">
-      <div class="caption">草津温泉 湯畑</div>
-    </div>
+  <div class="info-box">
+    <h3>📍 主要スポット</h3>
+    <p><strong>Day1:</strong> 諏訪湖 → 諏訪大社 → 万治の石仏 → 草津温泉</p>
+    <p><strong>Day2:</strong> 西の河原公園 → 八ッ場ダム → 白糸の滝 → ハルニレテラス → 姨捨SA</p>
   </div>
   
-  <table>
-    <tr>
-      <th style="width:15%">時間目安</th>
-      <th style="width:25%">場所/活動</th>
-      <th style="width:60%">詳細</th>
-    </tr>
-    <tr>
-      <td class="time">06:30</td>
-      <td><strong>🚗 碧南市 出発</strong></td>
-      <td>
-        <strong>ルート:</strong>国道23号 → 国道19号 → 中央道 名古屋IC → 岡谷IC<br>
-        <strong>所要時間:</strong>約3時間<br>
-        <span class="note">早朝出発で余裕を持った行程・コンビニで朝食調達</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">10:00頃</td>
-      <td><span class="highlight">📸 諏訪湖</span></td>
-      <td>
-        <strong>写真スポット:</strong>湖畔の絶景、晴れていれば富士山も見える<br>
-        <span class="note">岡谷ICから5分・立石公園展望台からの眺めがおすすめ</span><br>
-        <a href="https://www.suwakanko.jp/" target="_blank" rel="noopener" class="link-button">諏訪観光情報</a>
-    <a href="https://www.town.karuizawa.lg.jp/" target="_blank" rel="noopener" class="link-button">軽井沢観光協会</a>
+  <div class="info-box">
+    <h3>⏰ 出発・到着時刻</h3>
+    <p><strong>出発:</strong> Day1 6:30 碧南市</p>
+    <p><strong>到着:</strong> Day2 20:00 碧南市</p>
+    <p><strong>チェックイン:</strong> 15:30頃 / <strong>チェックアウト:</strong> 9:30</p>
+  </div>
+  
+  <div class="info-box">
+    <h3>💰 概算予算(1人あたり)</h3>
+    <p><strong>ホテル櫻井:</strong> 約35,000円〜</p>
+    <p><strong>ホテル フォーレスト:</strong> 約46,000円〜</p>
+    <p><strong>ラビスタ草津:</strong> 約62,000円〜</p>
+  </div>
+</section>
+
+<section class="important-links">
+  <h2>🔗 重要リンク</h2>
+  <div class="link-group">
+    <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">草津温泉観光協会</a>
+    <a href="https://www.suwakanko.jp/" target="_blank" rel="noopener" class="link-button">諏訪観光情報</a>
     <a href="https://www.jartic.or.jp/" target="_blank" rel="noopener" class="link-button">道路交通情報</a>
   </div>
 </section>
 
-</div>
-
-</body>
-</html> rel="noopener" class="link-button">🔗 諏訪観光情報</a>
-        <a href="https://www.google.com/maps/search/諏訪湖+立石公園/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">10:20頃</td>
-      <td><span class="highlight">⛩️ 諏訪大社 上社本宮</span></td>
-      <td>
-        <strong>ご利益:</strong>縁結び、商売繁盛、家内安全、心願成就、厄除け、方位除け、勝負運、必勝祈願<br>
-        <span class="note">全国約25,000社の諏訪神社総本社・日本最古級の神社</span><br>
-        <a href="http://suwataisha.or.jp/" target="_blank" rel="noopener" class="link-button">🔗 公式サイト</a>
-        <a href="https://www.google.com/maps/search/諏訪大社上社本宮/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">11:10頃</td>
-      <td><span class="highlight">🙏 万治の石仏</span></td>
-      <td>
-        <strong>参拝方法:</strong>① 正面で一礼し「よろずおさまりますように」 ② 時計回りに3周しながら同じ言葉を唱える ③ 正面に戻り願い事を心の中で唱える<br>
-        <span class="note">ユニークな形の石仏・願いが叶うパワースポット</span><br>
-        <a href="https://www.google.com/maps/search/万治の石仏/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">11:40頃</td>
-      <td><strong>🍜 昼食</strong></td>
-      <td>
-        <strong>おすすめ:</strong>信州そば、諏訪味噌料理、とんかつ丸一(下諏訪の人気店)<br>
-        <span class="note">下諏訪周辺で昼食・地元の味を堪能</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">13:00頃</td>
-      <td><strong>🚗 移動</strong></td>
-      <td>
-        <strong>ルート:</strong>中央道 岡谷IC → 長野道 → 上信越道 碓氷軽井沢IC → 国道146号<br>
-        <strong>所要時間:</strong>約2時間20分(SA休憩含む)<br>
-        <span class="note">⚠️ 峠道は雪・凍結注意!スタッドレス必須</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">15:30頃</td>
-      <td><strong>🏨 ホテル チェックイン</strong></td>
-      <td>
-        草津温泉街・2部屋確保<br>
-        <span class="note">※到着時刻を宿に連絡</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">チェックイン後</td>
-      <td><strong>♨️ 温泉・入浴</strong></td>
-      <td>
-        <strong>草津温泉の特徴:</strong>日本三名泉の一つ、強酸性で殺菌力が高い(美肌効果)、源泉温度が高い<br>
-        <span class="note">露天風呂・大浴場でゆっくりリラックス・長湯注意!(10〜15分程度)</span><br>
-        <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">🔗 草津温泉観光協会</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">18:00頃</td>
-      <td><strong>🍺 夕食・飲み放題</strong></td>
-      <td>
-        3人で乾杯!ラグジュアリー飲酒タイム<br>
-        <span class="note">※翌日の運転はよしおメイン確定・ほどほどに楽しむ😊</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">20:00以降</td>
-      <td><strong>🌙 夜の散策</strong></td>
-      <td>
-        <strong>湯畑ライトアップ鑑賞(点灯時間:日没〜24:00)</strong><br>
-        幻想的な湯けむりと光の演出、📸 写真撮影におすすめ、温泉まんじゅう食べ歩き<br>
-        <span class="note">防寒対策必須・夜の温泉街は寒い!</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">〜24:00</td>
-      <td><strong>🏨 宿で2次会 or 就寝</strong></td>
-      <td>
-        <span class="note">翌日の運転に備えて適度に楽しむ・水分補給を忘れずに</span>
-      </td>
-    </tr>
-  </table>
-</section>
-
-<!-- 草津温泉の楽しみ方 -->
-<section>
-  <h2>♨️ 草津温泉 おすすめスポット</h2>
-  
-  <div class="image-grid">
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=400&h=300&fit=crop" alt="湯畑" onerror="this.style.display='none'">
-      <div class="caption">湯畑(シンボル)</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=400&h=300&fit=crop" alt="温泉まんじゅう" onerror="this.style.display='none'">
-      <div class="caption">温泉まんじゅう</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop" alt="公園" onerror="this.style.display='none'">
-      <div class="caption">西の河原公園</div>
-    </div>
-  </div>
-  
-  <div class="spot-info">
-    <strong class="emoji">🎭</strong><strong>湯もみショー</strong><br>
-    <strong>場所:</strong>熱乃湯(湯畑すぐそば) | <strong>時間:</strong>9:30〜、10:00〜、10:30〜、15:30〜、16:00〜、16:30〜(各回20分) | <strong>料金:</strong>大人700円<br>
-    <span class="note">草津節に合わせて大きな板で湯をもむ伝統芸能・見応えあり</span>
-  </div>
-  
-  <div class="spot-info">
-    <strong class="emoji">💧</strong><strong>湯畑</strong><br>
-    草津温泉のシンボル・毎分4,000リットルの温泉が湧出<br>
-    <span class="note">📸 昼と夜で全く違う表情・両方撮影推奨</span>
-  </div>
-  
-  <div class="spot-info">
-    <strong class="emoji">🌲</strong><strong>西の河原公園</strong><br>
-    <strong>特徴:</strong>至る所から温泉が湧き出す不思議な公園<br>
-    <strong>見どころ:</strong>冬の雪景色、湯けむり、西の河原露天風呂<br>
-    <span class="note">※2日目の朝に散策予定・歩きやすい靴推奨</span><br>
-    <a href="https://www.google.com/maps/search/西の河原公園+草津/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-  </div>
-  
-  <div class="info-box">
-    <strong>🍡 草津グルメ</strong><br>
-    ・温泉まんじゅう(頼朝、松むら饅頭など)<br>
-    ・花豆ソフトクリーム<br>
-    ・草津ビール(地ビール)<br>
-    ・温泉卵<br>
-    <span class="note">夜の散策時に食べ歩き推奨!</span>
-  </div>
-</section>
-
-<!-- Day2 -->
-<section>
-  <h2>📅 Day2:草津温泉 → 八ッ場ダム → ハルニレテラス → 碧南市</h2>
-  <p class="note" style="margin-top:8px;">※八ッ場ダムカレー・白糸の滝・ハルニレテラス・姨捨SAの夜景</p>
-  
-  <div class="image-grid">
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1587474604979-ac6f932c5498?w=400&h=300&fit=crop" alt="ダム" onerror="this.style.display='none'">
-      <div class="caption">八ッ場ダム</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1541696438-f2a0c7e6d3c7?w=400&h=300&fit=crop" alt="滝" onerror="this.style.display='none'">
-      <div class="caption">白糸の滝</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=400&h=300&fit=crop" alt="カフェ" onerror="this.style.display='none'">
-      <div class="caption">ハルニレテラス</div>
-    </div>
-  </div>
-  
-  <table>
-    <tr>
-      <th style="width:15%">時間目安</th>
-      <th style="width:25%">場所/活動</th>
-      <th style="width:60%">詳細</th>
-    </tr>
-    <tr>
-      <td class="time">08:00</td>
-      <td><strong>🍚 朝食</strong></td>
-      <td>宿で朝食<br><span class="note">しっかり食べて帰路に備える</span></td>
-    </tr>
-    <tr>
-      <td class="time">朝食後</td>
-      <td><strong>♨️ 朝風呂</strong></td>
-      <td>朝の温泉でもう一度リラックス<br><span class="note">チェックアウト前にもう一度入浴・朝風呂は空いている</span></td>
-    </tr>
-    <tr>
-      <td class="time">09:30</td>
-      <td><strong>🏨 チェックアウト</strong></td>
-      <td><span class="note">※通常9:00だが、飲酒後のよしおに配慮して9:30設定</span></td>
-    </tr>
-    <tr>
-      <td class="time">10:00頃</td>
-      <td><span class="highlight">🚗 道の駅 草津運動茶屋公園</span></td>
-      <td>
-        <strong>🛍️ お土産購入:</strong>草津温泉まんじゅう、花豆・湯の花、地元野菜<br>
-        <span class="note">休憩・トイレ休憩も</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">10:30頃</td>
-      <td><span class="highlight">🌲 西の河原公園 散策</span></td>
-      <td>
-        <strong>見どころ:</strong>冬の雪景色と湯けむり、至る所から湧き出る温泉、📸 最後の写真スポット<br>
-        <span class="note">⚠️ 歩きやすい靴必須・防寒対策</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">11:00頃</td>
-      <td><strong>🚗 移動</strong></td>
-      <td><strong>ルート:</strong>県道・国道292号・国道145号 → 八ッ場ダム<br><strong>所要時間:</strong>約30分</td>
-    </tr>
-    <tr>
-      <td class="time">11:30頃</td>
-      <td><span class="highlight">🗻 八ッ場ダム</span></td>
-      <td>
-        <strong>見どころ:</strong>2020年3月完成の新しいダム・高さ116m、ダム堤体上から絶景を見渡せる<br>
-        <strong>🍛 八ッ場ダムカレー:</strong>道の駅八ッ場ふるさと館「八ッ場食堂」(営業時間:9:30〜15:30)、陶器のダムでカレーを堰き止めた新形式、ダムカレーカード付き<br>
-        <span class="note">※冬期(12月〜3月)は土日祝のみ営業の可能性あり・事前確認推奨</span><br>
-        <a href="https://www.yanbadamsidemuseum.jp/" target="_blank" rel="noopener" class="link-button">🔗 八ッ場ダム情報</a>
-        <a href="https://www.google.com/maps/search/八ッ場ダム/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">12:30頃</td>
-      <td><strong>🚗 移動</strong></td>
-      <td><strong>ルート:</strong>八ッ場ダム → 国道145号 → 国道18号 → 上信越道 碓氷軽井沢IC<br><strong>所要時間:</strong>約40分</td>
-    </tr>
-    <tr>
-      <td class="time">13:10頃</td>
-      <td><span class="highlight">🌊 白糸の滝</span></td>
-      <td>
-        <strong>絶景スポット:</strong>高さ3m、幅70mの滝が白糸のように流れ落ちる、駐車場から徒歩5分、📸 冬の氷結した滝も見応えあり<br>
-        <span class="note">自然豊かな森林の景観・軽井沢方面への途中</span><br>
-        <a href="https://www.town.karuizawa.lg.jp/www/contents/1001000000699/index.html" target="_blank" rel="noopener" class="link-button">🔗 白糸の滝情報</a>
-        <a href="https://www.google.com/maps/search/白糸の滝+軽井沢/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">14:00頃</td>
-      <td><span class="highlight">🌳 ハルニレテラス</span></td>
-      <td>
-        <strong>おしゃれな森のリゾート:</strong>春楡の木立に囲まれたウッドデッキの小さな街、湯川のせせらぎが心地よい、セレクトショップ・カフェ・ベーカリー<br>
-        <strong>おすすめ:</strong>カフェで軽食・コーヒー休憩<br>
-        <span class="note">中軽井沢・白糸の滝から約20分・混雑少なめでゆったり過ごせる</span><br>
-        <a href="https://www.hoshino-area.jp/shop" target="_blank" rel="noopener" class="link-button">🔗 公式サイト</a>
-        <a href="https://www.google.com/maps/search/ハルニレテラス+軽井沢/" target="_blank" rel="noopener" class="link-button map">📍 地図</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">15:00頃</td>
-      <td><strong>🚗 帰路開始</strong></td>
-      <td>
-        <strong>ルート:</strong>軽井沢 → 上信越道 碓氷軽井沢IC → 長野道 → 中央道<br>
-        <strong>所要時間:</strong>姨捨SAまで約2時間<br>
-        <span class="note">適宜SAで休憩・無理のない運転を・よしお頑張れ!</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">17:00頃</td>
-      <td><span class="highlight">🌆 姨捨SA</span></td>
-      <td>
-        <strong>夕方〜夜景の絶景スポット:</strong>日本夜景100選・日本夜景遺産認定、善光寺平の大パノラマ<br>
-        📸 <strong>おすすめ時間:夕暮れ〜夜</strong>(2月下旬は17:30頃日没)<br>
-        <span class="note">この時間帯なら夕暮れ〜夜景が楽しめる!展望広場で休憩</span><br>
-        <a href="https://sapa.c-nexco.co.jp/sapa?sapainfoid=181" target="_blank" rel="noopener" class="link-button">🔗 姨捨SA情報</a>
-      </td>
-    </tr>
-    <tr>
-      <td class="time">17:30頃</td>
-      <td><strong>🚗 帰路再開</strong></td>
-      <td><strong>ルート:</strong>中央道 → 名古屋方面<br><strong>所要時間:</strong>約2.5時間<br><span class="note">ラストスパート・安全運転第一</span></td>
-    </tr>
-    <tr>
-      <td class="time">20:00</td>
-      <td><strong>🏠 碧南市 到着</strong></td>
-      <td>
-        お疲れ様でした!<br>
-        <span class="note">奈々・なつきは荷解き・入浴して24時就寝・翌日の仕事頑張って!<br>よしお、長距離運転お疲れ様でした!</span>
-      </td>
-    </tr>
-  </table>
-  
-  <div class="highlight-box" style="margin-top:16px;">
-    <strong>💡 2日目の立ち寄りスポットについて</strong><br>
-    八ッ場ダムカレー+白糸の滝+ハルニレテラス+姨捨SAの夜景!<br>
-    <br>
-    <strong>ハルニレテラスを選んだ理由:</strong><br>
-    ・落ち着いた大人の雰囲気でゆったり休憩できる<br>
-    ・自然の中のおしゃれカフェで軽食・コーヒー<br>
-    ・混雑が少なく、奈々・なつきも楽しめる<br>
-    ・白糸の滝からのアクセスが良い(約20分)<br>
-    ・よしおの運転負担も軽減<br>
-    <br>
-    20時碧南着で奈々・なつきは24時就寝可能・翌日の仕事に影響なし!<br>
-    <span class="note">※天候・体調により柔軟に変更可能</span>
-  </div>
-</section>
-
-<!-- 注意事項 -->
-<section>
-  <h2>⚠️ 旅の注意事項・持ち物</h2>
-  
-  <h3>🚗 車・運転関連</h3>
-  <ul>
-    <li><strong>スタッドレスタイヤ必須:</strong>2月の草津・軽井沢は積雪・凍結の可能性大</li>
-    <li><strong>運転交代:</strong>2時間ごとに休憩・疲れたら無理せず交代</li>
-    <li><strong>峠道注意:</strong>碓氷軽井沢IC〜草津間は峠越え・カーブ多い</li>
-    <li><strong>ガソリン:</strong>草津は標高が高く、ガソリンスタンド少ない・事前給油推奨</li>
-    <li><strong>チェーン:</strong>念のため携行(大雪時は装着必要な場合も)</li>
-  </ul>
-  
-  <h3>🧥 服装・持ち物</h3>
-  <ul>
-    <li><strong>防寒必須:</strong>手袋・帽子・マフラー・カイロ</li>
-    <li><strong>靴:</strong>滑りにくい防水ブーツ(西の河原公園散策用)</li>
-    <li><strong>温泉:</strong>タオル(大浴場用)、ビニール袋(濡れた物入れ)</li>
-    <li><strong>スマホ充電器・モバイルバッテリー</strong></li>
-    <li><strong>カメラ(あれば)</strong></li>
-    <li><strong>常備薬・酔い止め・二日酔い対策</strong></li>
-    <li><strong>現金(小銭も)</strong></li>
-    <li><strong>保険証</strong></li>
-  </ul>
-  
-  <h3>♨️ 温泉マナー</h3>
-  <ul>
-    <li>草津温泉は<strong>強酸性</strong>のため長湯注意!(10〜15分程度)</li>
-    <li>肌が弱い方は入浴後に真水で軽く流すと良い</li>
-    <li>飲酒後すぐの入浴は避ける・水分補給をしっかり</li>
-  </ul>
-  
-  <h3>⚠️ 2日目の運転について</h3>
-  <ul>
-    <li><strong>よしおの運転距離:</strong>約5.5時間(適度に休憩入り・20時着)</li>
-    <li><strong>1日目夜:</strong>飲み放題プランで楽しむが「ほどほど」に</li>
-    <li><strong>二日酔い対策:</strong>水分補給、ウコン等サプリメント、朝食しっかり</li>
-    <li><strong>休憩ポイント:</strong>道の駅草津・西の河原・八ッ場ダム・白糸の滝・ハルニレテラス・姨捨SA</li>
-    <li><strong>無理な運転は絶対NG:</strong>眠ければSAで仮眠・奈々となつきも声かけて</li>
-    <li><strong>奈々・なつき:</strong>24時就寝→翌日仕事頑張って!</li>
-  </ul>
-</section>
-
-<!-- 写真スポットまとめ -->
-<section>
-  <h2>📸 写真スポットまとめ</h2>
-  
-  <div class="image-grid">
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=300&h=200&fit=crop" alt="諏訪湖" onerror="this.style.display='none'">
-      <div class="caption">1. 諏訪湖(立石公園展望台)</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=300&h=200&fit=crop" alt="神社" onerror="this.style.display='none'">
-      <div class="caption">2. 諏訪大社 上社本宮</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1628191011227-6ac726489fa5?w=300&h=200&fit=crop" alt="湯畑夜" onerror="this.style.display='none'">
-      <div class="caption">3. 湯畑ライトアップ(夜)</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=300&h=200&fit=crop" alt="公園" onerror="this.style.display='none'">
-      <div class="caption">4. 西の河原公園</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1587474604979-ac6f932c5498?w=300&h=200&fit=crop" alt="ダム" onerror="this.style.display='none'">
-      <div class="caption">5. 八ッ場ダム</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1541696438-f2a0c7e6d3c7?w=300&h=200&fit=crop" alt="滝" onerror="this.style.display='none'">
-      <div class="caption">6. 白糸の滝</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=300&h=200&fit=crop" alt="テラス" onerror="this.style.display='none'">
-      <div class="caption">7. ハルニレテラス</div>
-    </div>
-    <div class="image-card">
-      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=300&h=200&fit=crop" alt="夜景" onerror="this.style.display='none'">
-      <div class="caption">8. 姨捨SA(夕方〜夜)</div>
-    </div>
-  </div>
-  
-  <p class="note" style="margin-top:12px;">※スマホ充電を忘れずに!GoProやカメラ持参もおすすめ</p>
-</section>
-
-<!-- 予算まとめ -->
-<section>
-  <h2>💰 予算まとめ(1人あたり概算)</h2>
-  
-  <table>
-    <tr>
-      <th>項目</th>
-      <th>金額</th>
-      <th>備考</th>
-    </tr>
-    <tr>
-      <td><strong>宿泊費</strong></td>
-      <td class="price">18,000〜45,000円</td>
-      <td>ホテルにより変動・2食+飲み放題込み</td>
-    </tr>
-    <tr>
-      <td><strong>高速代</strong></td>
-      <td class="price">約8,000円</td>
-      <td>往復・ETC休日割引適用(月曜祝日)</td>
-    </tr>
-    <tr>
-      <td><strong>ガソリン代</strong></td>
-      <td class="price">約4,000円</td>
-      <td>往復約600km・燃費15km/L想定</td>
-    </tr>
-    <tr>
-      <td><strong>昼食(2回)</strong></td>
-      <td class="price">約2,000円</td>
-      <td>1日目昼(諏訪)・2日目昼(八ッ場ダムカレー)</td>
-    </tr>
-    <tr>
-      <td><strong>軽食・おやつ</strong></td>
-      <td class="price">約1,000円</td>
-      <td>2日目軽井沢・姨捨SA</td>
-    </tr>
-    <tr>
-      <td><strong>観光・その他</strong></td>
-      <td class="price">約2,000円</td>
-      <td>湯もみショー・お土産・食べ歩き・有料道路</td>
-    </tr>
-    <tr style="background:#fef9f3;">
-      <td><strong>合計</strong></td>
-      <td class="price" style="font-size:1.15em;">35,000〜62,000円</td>
-      <td><strong>※ホテルのグレードにより変動</strong></td>
-    </tr>
-  </table>
-  
-  <div class="info-box" style="margin-top:12px;">
-    <strong>💡 3人でシェアする費用</strong><br>
-    ・高速代:約8,000円 ÷ 3人 = <strong>約2,700円/人</strong><br>
-    ・ガソリン代:約4,000円 ÷ 3人 = <strong>約1,300円/人</strong><br>
-    <span class="note">※宿泊・食事は各自支払い想定</span>
-  </div>
-  
+<section class="final-message">
   <div class="highlight-box">
-    <strong>🏨 ホテル別 総予算目安(1人)</strong><br>
-    <br>
-    <strong>① ホテル櫻井:</strong>約35,000円〜<br>
-    (宿18,000円+交通4,000円+食事・観光5,000円+お土産等)<br>
-    <br>
-    <strong>② ホテル フォーレスト:</strong>約46,000円〜<br>
-    (宿25,000円+交通4,000円+食事・観光5,000円+お土産等)<br>
-    <br>
-    <strong>③ ラビスタ草津:</strong>約62,000円〜<br>
-    (宿45,000円+交通4,000円+食事・観光5,000円+お土産等)<br>
-    <br>
-    <span class="note">※この他、お土産代・個人的な買い物代は別途</span>
-  </div>
-</section>
-
-<!-- おすすめグルメ詳細 -->
-<section>
-  <h2>🍜 おすすめグルメ情報</h2>
-  
-  <h3>🍚 諏訪エリア(1日目昼食)</h3>
-  <div class="spot-info">
-    <strong>信州そば</strong><br>
-    下諏訪周辺に手打ちそば屋が点在・地元の水と蕎麦粉で打った絶品そば<br>
-    <span class="note">予算:1,000〜1,500円</span>
-  </div>
-  
-  <div class="spot-info">
-    <strong>とんかつ丸一(下諏訪)</strong><br>
-    地元で人気のとんかつ専門店・ボリューム満点<br>
-    <span class="note">予算:1,200〜1,800円</span>
-  </div>
-  
-  <h3>🍚 草津温泉(夜の食べ歩き)</h3>
-  <div class="spot-info">
-    <strong>温泉まんじゅう</strong><br>
-    ・頼朝(らいちょう):草津で一番人気<br>
-    ・松むら饅頭:老舗の名店<br>
-    <span class="note">1個150〜200円・出来たてが最高</span>
-  </div>
-  
-  <div class="spot-info">
-    <strong>花豆ソフトクリーム</strong><br>
-    草津名物の花豆を使った濃厚ソフト・湯畑周辺で販売<br>
-    <span class="note">400円前後</span>
-  </div>
-  
-  <h3>🍚 八ッ場ダムエリア(2日目昼食)</h3>
-  <div class="spot-info">
-    <strong>道の駅八ッ場ふるさと館「八ッ場食堂」</strong><br>
-    ・<strong>八ッ場ダムカレー</strong>(陶器のダムでカレーを堰き止めた新形式)<br>
-    ・ダムカレーカード付き<br>
-    ・純国産100%こだわりの石臼挽き「自家製粉そば」<br>
-    ・国産豚の「やわらかソースかつ丼」<br>
-    <span class="note">予算:1,000〜1,500円 / 営業時間:9:30〜15:30(冬期は土日祝のみの可能性)</span><br>
-    <a href="https://www.yanbadamsidemuseum.jp/" target="_blank" rel="noopener" class="link-button">🔗 詳細情報</a>
-  </div>
-  
-  <h3>🍚 軽井沢エリア(2日目軽食)</h3>
-  <div class="spot-info">
-    <strong>ハルニレテラス周辺</strong><br>
-    イタリアン・カフェ・ベーカリー・おしゃれで落ち着いた雰囲気<br>
-    <span class="note">予算:1,500〜2,500円</span><br>
-    <a href="https://www.hoshino-area.jp/shop" target="_blank" rel="noopener" class="link-button">🔗 店舗一覧</a>
-  </div>
-</section>
-
-<!-- 事前準備チェックリスト -->
-<section>
-  <h2>✅ 事前準備チェックリスト</h2>
-  
-  <h3>🏨 予約関連(1ヶ月前までに)</h3>
-  <ul>
-    <li>□ ホテル予約(2部屋・飲み放題プラン確認)</li>
-    <li>□ チェックイン時間の相談(15:00〜15:30希望)</li>
-    <li>□ 送迎バスの有無確認</li>
-    <li>□ キャンセルポリシー確認</li>
-  </ul>
-  
-  <h3>🚗 車関連(2週間前までに)</h3>
-  <ul>
-    <li>□ スタッドレスタイヤ装着</li>
-    <li>□ チェーン携行</li>
-    <li>□ 車の点検(バッテリー・ワイパー・ウォッシャー液)</li>
-    <li>□ ETCカード確認</li>
-    <li>□ ガソリン満タン</li>
-  </ul>
-  
-  <h3>🎒 持ち物(前日までに)</h3>
-  <ul>
-    <li>□ 防寒着(手袋・帽子・マフラー)</li>
-    <li>□ 滑りにくい靴・ブーツ</li>
-    <li>□ タオル・着替え</li>
-    <li>□ スマホ充電器・モバイルバッテリー</li>
-    <li>□ カメラ(あれば)</li>
-    <li>□ 常備薬・酔い止め・二日酔い対策</li>
-    <li>□ 現金(小銭も)</li>
-    <li>□ 保険証</li>
-  </ul>
-  
-  <h3>📱 当日朝</h3>
-  <ul>
-    <li>□ 天気予報・道路状況確認</li>
-    <li>□ ホテルへ到着時刻の連絡(遅れる場合)</li>
-    <li>□ プレイリスト準備(ドライブミュージック・よしお用の眠気覚まし曲も)</li>
-  </ul>
-</section>
-
-<!-- 緊急連絡先 -->
-<section>
-  <h2>📞 緊急連絡先・お役立ち情報</h2>
-  
-  <div class="info-box">
-    <strong>🚗 道路情報</strong><br>
-    ・日本道路交通情報センター:#8011(携帯から)<br>
-    ・上信越道路情報:公式サイト確認<br>
-    ・雪道状況:各IC情報板確認
-  </div>
-  
-  <div class="info-box">
-    <strong>🏥 医療機関</strong><br>
-    ・草津町国民健康保険草津診療所<br>
-    (草津温泉最寄りの医療機関)
-  </div>
-  
-  <div class="info-box">
-    <strong>🅿️ 駐車場情報</strong><br>
-    ・諏訪大社:無料駐車場あり<br>
-    ・万治の石仏:近隣に無料駐車スペース<br>
-    ・草津温泉:宿泊者専用駐車場(ホテルに確認)<br>
-    ・西の河原公園:無料駐車場あり<br>
-    ・八ッ場ダム:道の駅八ッ場ふるさと館 無料駐車場<br>
-    ・白糸の滝:駐車場あり(白糸ハイランドウェイは有料道路)<br>
-    ・ハルニレテラス:無料駐車場あり
-  </div>
-  
-  <div class="info-box">
-    <strong>♨️ 草津温泉観光協会</strong><br>
-    最新イベント・湯もみショー情報確認<br>
-    <span class="note">※公式サイトで最新情報をチェック推奨</span><br>
-    <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">🔗 公式サイト</a>
-  </div>
-</section>
-
-<!-- まとめ -->
-<section style="background: linear-gradient(to bottom, #fff 0%, #fef9f3 100%);">
-  <h2>🌸 旅を楽しむために</h2>
-  
-  <div class="highlight-box">
-    <p><strong>この旅のコンセプト:</strong><br>
-    「無理せず、楽しく、思い出に残る温泉旅」</p>
-    
-    <p style="margin-top:12px;"><strong>大切なポイント:</strong></p>
-    <ul style="margin-top:8px;">
+    <p style="font-size:1.1em; text-align:center; margin-bottom:10px;">
+      <strong>🌸 大切なポイント 🌸</strong>
+    </p>
+    <ul>
       <li>天候・道路状況によって柔軟に予定変更OK</li>
       <li>誰かが疲れたら無理せず休憩</li>
-      <li>「絶対行きたい」「できれば」「時間あれば」の優先順位を決めておく</li>
       <li>写真はたくさん撮って、3人で共有</li>
       <li>お酒は楽しく、でも翌日のことも考えて</li>
       <li>安全運転第一!</li>
     </ul>
     
-    <div style="margin-top:20px; text-align:center;">
-      <p style="font-size:2em;">🌸♨️🗻</p>
-    </div>
-    
-    <p style="margin-top:16px; font-size:1.1em; color:#a67c52; text-align:center;">
+    <p style="margin-top:20px; font-size:1.2em; color:#a67c52; text-align:center;">
       <strong>素敵な旅になりますように!🌸♨️</strong>
     </p>
   </div>
-  
-  <div class="note" style="text-align:center; margin-top:16px; padding-top:12px; border-top:2px solid #d4a574;">
-    このしおりは<strong>案</strong>です。3人で話し合って調整してください😊<br>
-    作成日:2025年11月<br>
-    <br>
-    <strong>参考リンク集:</strong><br>
-    <a href="https://www.kusatsu-onsen.ne.jp/" target="_blank" rel="noopener" class="link-button">草津温泉観光協会</a>
-    <a href="https://www.suwakanko.jp/" target="_blank"
+</section>
+
+<footer>
+  <p>このしおりは<strong>案</strong>です。3人で話し合って調整してください😊</p>
+  <p>作成日: 2025年11月</p>
+</footer>
+
+</div>
+
+</body>
+</html>
